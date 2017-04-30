@@ -259,13 +259,20 @@ body {
 
 .discover-applet {
   display: inline-block;
+  background-image: url("/images/discover/01_back.jpg");
 
   padding: 20px;
-  width: 30%;
-  height: 120px;
+  width: 400px;
+  height: 300px;
   margin: 5px;
 
   border: 1px solid green;
+}
+
+.discover-applet-text {
+  font-size: 2em;
+  font-weight: bold;
+  color: $font-color;
 }
 
 
