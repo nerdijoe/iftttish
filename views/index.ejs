@@ -2,10 +2,115 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link rel="stylesheet" href="http://unpkg.com/css-font-family@1.0.6/css/css-font-family.min.css" />
     <link rel='stylesheet' href='/css/main.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="container">
+
+      <div class="container-blue">
+
+      <nav>
+        <div class="logo">IFTTT</div>
+        <div class="nav_bar">
+          <a href="#">Sign in</a>
+          <a href="#">Sign up</a>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <p class="banner-text-1">
+          Do more with the services you love
+        </p>
+
+        <div class="button-big">
+          <span class="button-big-text">Get started</span>
+        </div>
+
+        <p class="banner-text-2">
+          Sign up for a free account and turn on Applets that work with hundreds of your favorite services
+        </p>
+
+        <div class="applet-container vertical-container">
+
+        <div class="applet red">
+          <span class="applet-text">Tweet your instagram as native photos on Twitter</span>
+        </div>
+
+        <div class="applet blue">
+          <span class="applet-text">Track your work hours in Google Calendar</span>
+        </div>
+
+        <div class="applet green1">
+          <span class="applet-text">Mute your Android phone when you arrive at work</span>
+        </div>
+
+        <div class="applet black">
+          <span class="applet-text">Get weather forecast every day at 7:00 AM</span>
+        </div>
+
+        <div class="applet green2">
+          <span class="applet-text">Sync all your new iOS Contacts to a Google Spreadsheet</span>
+        </div>
+
+      </div>
+
+      </div> <!-- end of banner -->
+
+    </div> <!-- end of container-blue -->
+
+    <div class="container-discover">
+
+      <p class="discover-text-2">
+        Discover Applets for every part of your life
+      </p>
+
+        <div class="discover-applet-container vertical-container">
+          <div class="discover-applet">
+            15 Applets for the environment
+          </div>
+
+          <div class="discover-applet">
+            18 Applets for the news
+          </div>
+
+          <div class="discover-applet">
+            18 Applets for Google
+          </div>
+
+          <div class="discover-applet">
+            15 Applets for iOS ウェブサイトのメンテナンスの下で
+          </div>
+      </div> <!-- end of discover-applet-container -->
+
+      <div class="button-small">
+        <span class="button-small-text text-white">Sign up</span>
+      </div>
+
+    </div> <!-- container-discover -->
+
+
+
+    </div> <!-- end of container -->
+
+
+    <div class="footer">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Platform</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+
+      <div class="badge-container vertical-align">
+        <a href="#"><img class="app-store-badge" src="/images/app_store_badges/app-store-badge.svg"/></a>
+        <a href="#"><img class="google-play-badge" src="/images/app_store_badges/google-play-badge.png"/></a>
+      </div>
+
+    </div> <!-- end of footer -->
+
   </body>
 </html>
