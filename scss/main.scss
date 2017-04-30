@@ -4,11 +4,16 @@ $font-color: white;
 $background-blue: #0099FF;
 
 * {
-  //  border: 1px solid red !important;
+  // border: 1px solid red !important;
+  // margin: 0; padding: 0; border: 0; outline: 0;
 }
 
 body {
-  // margin: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
   // background-color: $badass;
   // font-family: avenir, 'avenir next', helvetica, arial, sans-serif;
   font-family: "Avenir Next W01", "Avenir Next", "Avenir", helvetica, arial, sans-serif;
@@ -26,28 +31,70 @@ body {
   background: $background-blue;
 }
 
-nav {
+.nav {
   // width: 800px;
   width: 100%;
-  // height: 200px;
-
+  height: 120px;
+  line-height: 120px;
   // border: 1px solid green;
   border-bottom: 1px solid #f5f5f5;
 
 }
 
 .logo {
-  font-size: 2em;
+  display: inline-block;
+  padding-left: 100px;
+  font-size: 2.5em;
   // left: 0px;
   width: 200px;
   display: inline;
-  font-weight: 800;
+  font-weight: 900;
   color: $font-color;
+  vertical-align: middle;
 }
 
 .nav_menu {
-  display: inline;
+  padding-right: 100px;
+  display: inline-block;
+  text-align: right;
+  float: right;
+  vertical-align: middle;
 }
+
+.nav a {
+  padding: 5px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.nav a:link {
+  color: white;
+}
+
+.nav a:visited {
+  color: white;
+}
+
+.sign-up-button {
+  // display: inline-block;
+  border: 3px solid white;
+  border-radius: 20px;
+  // background: $background-blue;
+  // padding: 20px;
+  width: 100px;
+  height: 30px;
+  //
+  //
+  // text-align: center;
+}
+
+.button-small-text {
+  font-size: 1.7em;
+  font-weight: bold;
+
+}
+
+
 
 .banner {
   margin: auto;
@@ -111,7 +158,7 @@ nav {
   border-radius: 100px;
   background: $background-blue;
   padding: 20px;
-  width: 150px;
+  width: 170px;
   height: 30px;
 
   text-align: center;
@@ -223,8 +270,8 @@ nav {
 
 
 .footer {
-  // margin-top: 80px;
-  // padding-top: 20px;
+  margin-top: 80px;
+  padding-top: 20px;
   height: 100px;
   border-top: 1px solid #f5f5f5;
 }
@@ -246,6 +293,9 @@ a {
   text-decoration: none;
 }
 a:link {
+  color: inherit;
+}
+a:visited {
   color: inherit;
 }
 
