@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "build-css": "./bin/build-css",
-    "watch-css": "./bin/watch-css"
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "dependencies": {
     "body-parser": "~1.17.1",
