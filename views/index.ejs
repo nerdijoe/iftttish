@@ -10,25 +10,46 @@
 
       <div class="container-blue">
 
-      <nav>
+      <div class="nav">
         <div class="logo">IFTTT</div>
-        <div class="nav_bar">
-          <a href="#">Sign in</a>
-          <a href="#">Sign up</a>
+        <div class="nav_menu">
+          <% if (lang && lang == "jp") { %>
+            <a href="#">サインイン</a>
+            <a class="sign-up-button" href="#">サインアップ</a>
+          <% } else { %>
+            <a href="#">Sign in</a>
+            <a class="sign-up-button" href="#">Sign up</a>
+          <% } %>
+
+
         </div>
-      </nav>
+      </div>
 
       <div class="banner">
         <p class="banner-text-1">
-          Do more with the services you love
+          <% if (lang && lang == "jp") { %>
+            愛しているサービスをさらに活用してください
+          <% } else { %>
+            Do more with the services you love
+          <% } %>
         </p>
 
         <div class="button-big">
-          <span class="button-big-text">Get started</span>
+          <span class="button-big-text">
+            <% if (lang && lang == "jp") { %>
+              スタートします！
+            <% } else { %>
+              Get started
+            <% } %>
+          </span>
         </div>
 
         <p class="banner-text-2">
-          Sign up for a free account and turn on Applets that work with hundreds of your favorite services
+          <% if (lang && lang == "jp") { %>
+            フリーアカウントにサインアップして、何百ものお気に入りのサービスで動作するアプレットを有効にする
+          <% } else { %>
+            Sign up for a free account and turn on Applets that work with hundreds of your favorite services
+          <% } %>
         </p>
 
         <div class="applet-container vertical-container">
@@ -79,12 +100,20 @@
           </div>
 
           <div class="discover-applet">
-            15 Applets for iOS ウェブサイトのメンテナンスの下で
+            15 Applets for iOS
           </div>
       </div> <!-- end of discover-applet-container -->
 
       <div class="button-small">
-        <span class="button-small-text text-white">Sign up</span>
+        <span class="button-small-text text-white">
+
+          <% if (lang && lang == "jp") { %>
+            サインアップ
+          <% } else { %>
+            Sign up
+          <% } %>
+
+        </span>
       </div>
 
     </div> <!-- container-discover -->
@@ -96,13 +125,28 @@
 
     <div class="footer">
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Platform</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Privacy</a></li>
+
+        <% if (lang && lang == "jp") { %>
+          <li><a href="#">会社情報</a></li>
+          <li><a href="#">プラットフォーム</a></li>
+          <li><a href="#">ブログ</a></li>
+          <li><a href="#">コミュニティ</a></li>
+          <li><a href="#">採用情報</a></li>
+          <li><a href="#">利用規約</a></li>
+          <li><a href="#">プライバシー</a></li>
+
+        <% } else { %>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Platform</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+
+        <% } %>
+
+
       </ul>
 
       <div class="badge-container vertical-align">
