@@ -185,7 +185,7 @@ body {
 
   border-radius: 10px;
   padding: 20px;
-  width: 100px;
+  width: 140px;
   height: 200px;
   margin: 5px;
 }
@@ -238,7 +238,7 @@ body {
 
 .container-discover {
   margin: auto;
-  width: 90%;
+  width: 95%;
 }
 
 .discover-text-2 {
@@ -247,33 +247,180 @@ body {
   text-align: center;
   font-weight: bold;
 
-  padding-top: 50px;
+  padding: 50px 0 20px;
 }
 
 
 .discover-applet-container {
   margin: auto;
   // border: 1px solid green;
+  padding-bottom: 30px;
 }
 
 
 .discover-applet {
   display: inline-block;
-  background-image: url("/images/discover/01_back.jpg");
+  // background-image: url("/images/discover/01_back.jpg");
 
   padding: 20px;
-  width: 400px;
+  // max-width: 30%;
+  width: 30%;
   height: 300px;
-  margin: 5px;
+  margin: 2px;
 
-  border: 1px solid green;
+  position:relative;
+  vertical-align: bottom;
+
+  // border: 1px solid green;
 }
+
 
 .discover-applet-text {
+  margin: auto;
+  // max-width: 250px;
+  font-size: 2.8em;
+  font-weight: bold;
+  text-align: center;
+  // color: $font-color;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+
+}
+
+// .discover-applet img {
+//   z-index: 0;
+//   margin: 0 auto;
+// }
+
+.image-container {
+  position: absolute;
+  bottom: 0;
+  // vertical-align: bottom;
+  z-index: 0;
+}
+
+
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: tomato;
+
+  padding: 5px;
+  // width: 200px;
+  width: calc(100% * (1/3) - 10px - 5px);
+  min-width: 300px;
+
+  height: 300px;
+  margin-top: 10px;
+
+  line-height: 300px;
+
+  // color: white;
+  // font-weight: bold;
+  // font-size: 3em;
+  // text-align: center;
+
+  position:relative;
+  vertical-align: bottom;
+
+}
+
+.flex-container-badge {
+  padding: 0;
+  margin: auto;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+}
+
+
+
+.flex-item-badge {
+  // background: tomato;
+
+  padding: 5px;
+  width: 200px;
+  // width: calc(100% * (1/3) - 10px - 5px);
+  // min-width: 300px;
+
+  height: 100px;
+  margin-top: 10px;
+
+  line-height: 100px;
+
+  // color: white;
+  // font-weight: bold;
+  // font-size: 3em;
+  // text-align: center;
+
+  // position:relative;
+  // vertical-align: bottom;
+  // border: 1px solid green;
+
+}
+
+
+
+.flex-item-text {
+  // margin: auto;
+  // max-width: 250px;
   font-size: 2em;
   font-weight: bold;
-  color: $font-color;
+  text-align: center;
+  // color: $font-color;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+
 }
+
+
+.discover-background-1 {
+  background-image: url("/images/discover/01_back.jpg");
+}
+
+.discover-background-2 {
+  background-image: url("/images/discover/02_back.jpg");
+}
+.discover-background-3 {
+  background-image: url("/images/discover/03_back.png");
+}
+.discover-background-4 {
+  background-image: url("/images/discover/04_back.png");
+}
+.discover-background-5 {
+  background-image: url("/images/discover/05_back.jpg");
+}
+.discover-background-6 {
+  background-image: url("/images/discover/06_back.jpg");
+}
+
+
+
+
 
 
 .footer {
@@ -330,11 +477,17 @@ a:visited {
 }
 
 .app-store-badge {
-  width: 15%;
+  width: 70%;
   height: auto;
 }
 
 .google-play-badge {
-  width: 18%;
+  padding-top: 3px;
+  width: 80%;
   height: auto;
+}
+
+.badge-container a {
+  padding: 0px;
+
 }
