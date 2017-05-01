@@ -83,27 +83,88 @@
     <div class="container-discover">
 
       <p class="discover-text-2">
-        Discover Applets for every part of your life
+
+        <% if (lang && lang == "jp") { %>
+          あなたの人生のあらゆる部分のアプレットを発見する
+        <% } else { %>
+          Discover Applets for every part of your life
+        <% } %>
+
+
+
       </p>
 
         <div class="discover-applet-container">
-          <div class="discover-applet">
-            <span class="discover-applet-text">15 Applets for the environment</span>
+          <div class="discover-applet discover-background-1">
+            <p class="discover-applet-text text-white">15 Applets for the environment</p>
+            <div class="image-container">
+              <img src="/images/discover/01.png" alt="15 Applets for the environment">
+            </div>
+          </div>
+
+          <div class="discover-applet discover-background-2">
+
+            <p class="discover-applet-text text-white">18 Applets for the news</p>
+            <div class="image-container">
+              <img src="/images/discover/02.png" alt="18 Applets for the news">
+            </div>
+
+          </div>
+
+          <div class="discover-applet discover-background-3">
+
+            <p class="discover-applet-text text-white">18 Applets for Google</p>
+            <div class="image-container">
+              <img src="/images/discover/03.png" alt="18 Applets for Google">
+            </div>
+
+          </div>
+
+          <div class="discover-applet discover-background-4">
+
+            <p class="discover-applet-text">15 Applets for iOS</p>
+            <div class="image-container">
+              <img src="/images/discover/04.png" alt="15 Applets for iOS">
+            </div>
+
+          </div>
+
+          <div class="discover-applet discover-background-5">
+
+            <p class="discover-applet-text text-white">12 Applets for Android</p>
+            <div class="image-container">
+              <img src="/images/discover/05.png" alt="12 Applets for Android">
+            </div>
+
+          </div>
+
+          <div class="discover-applet discover-background-6">
+
+            <p class="discover-applet-text">21 Applets for the weather</p>
+            <div class="image-container">
+              <img src="/images/discover/06.png" alt="21 Applets for the weather">
+            </div>
+
+          </div>
+
+      </div> <!-- end of discover-applet-container -->
+
+
+
+      <%# <ul class="flex-container">
+        <li class="flex-item discover-background-1">
+          <p class="flex-item-text text-white">15 Applets for the environment</p>
+          <div class="image-container">
             <img src="/images/discover/01.png" alt="15 Applets for the environment">
           </div>
+        </li>
+        <li class="flex-item discover-background-2">2</li>
+        <li class="flex-item discover-background-3">3</li>
+        <li class="flex-item discover-background-4">4</li>
+        <li class="flex-item discover-background-5">5</li>
+        <li class="flex-item discover-background-6">6</li>
+      </ul>%>
 
-          <div class="discover-applet">
-            18 Applets for the news
-          </div>
-
-          <div class="discover-applet">
-            18 Applets for Google
-          </div>
-
-          <div class="discover-applet">
-            15 Applets for iOS
-          </div>
-      </div> <!-- end of discover-applet-container -->
 
       <div class="button-small">
         <span class="button-small-text text-white">
@@ -150,9 +211,17 @@
 
       </ul>
 
-      <div class="badge-container vertical-align">
-        <a href="#"><img class="app-store-badge" src="/images/app_store_badges/app-store-badge.svg"/></a>
-        <a href="#"><img class="google-play-badge" src="/images/app_store_badges/google-play-badge.png"/></a>
+      <div class="badge-container vertical-container">
+        <ul class="flex-container-badge">
+          <li class="flex-item-badge">
+            <a href="#"><img class="app-store-badge" src="/images/app_store_badges/app-store-badge.svg"/></a>
+          </li>
+
+          <li class="flex-item-badge">
+            <a href="#"><img class="google-play-badge" src="/images/app_store_badges/google-play-badge.png"/></a>
+          </li>
+        </ul>
+
       </div>
 
     </div> <!-- end of footer -->
